@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            regitration page
+        </title>
+    </head>
+    <body align="center">
+        <h1>regitration page</h1>
+        <form action="sucess.html" method="post">
+            Name:<input type="text" name="g1" placeholder="enter your name" autofocus><br><br>
+            email:<input type="email" name="g2" placeholder="enter your mail"><br><br>
+            mobile:<input type="tel" name="g3" placeholder="mobile no" pattern="[0-9]{10}" required><br><br>
+            course:<select name="g4" required>
+                 <option>B.tech</option>
+                 <option>M.tech</option>
+                 <option>P.hD</option>
+            </select><br><br>
+            gender:<input type="radio" name="g5" required>Male
+            <input type="radio" name="g5" >Female <br><br>
+            address :<textarea name="g6" required rows="3" cols="30"
+            placeholder="enter your address"></textarea><br><br>
+            skills known:<input type="checkbox" name="g7">HTML
+            <input type="checkbox" name="g7">CSS
+            <input type="checkbox" name="g7">JAVA SCRIPT
+            <input type="checkbox" name="g7">PHP <br><br>
+            inter perentage:<input type="number" name="g8" min="0" max="100" required>
+            upload photo:<input type="file" name="g9" accept=".jpg,.jpeg,.png"><br><br>
+            password:<input type="password" name="g10" minlength="6" required><br><br>
+            <input type="checkbox" name="g11" required>do u agree tot the terms
+            <button type="submit">register</button>
+            <button type="reset">clear all</button>
+        </form>
+    </body>
+</html>
