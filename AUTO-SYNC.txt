@@ -1,0 +1,19 @@
+Automatic GitHub sync
+
+Work in this folder: C:\Users\Dell\Documents\fsfe prgms
+Save your files. After about 20-30 seconds without further saved changes,
+new files, edits, and deletions are committed and pushed to:
+https://github.com/KDivya-Teja/FSFE-PROGRAMS-2620030005
+
+Sync starts automatically when you sign in to Windows.
+Internet is needed to push; failures are retried every 10 seconds.
+The .local-sync folder, .env files, and node_modules are ignored.
+Only saved changes are uploaded. Files in other folders are not synced.
+
+To check sync activity, open .local-sync\sync.log in this folder.
+To disable startup, press Win+R, enter shell:startup, and remove
+"FSFE GitHub Auto Sync.vbs". Sign out and back in to stop the running worker.
+
+If GitHub rejects a push because somebody else changed the repository,
+the log records the error. Resolve the diverging history with Git before
+sync can continue; the worker does not force-push or overwrite remote history.
